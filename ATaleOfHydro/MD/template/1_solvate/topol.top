@@ -1,0 +1,12 @@
+; MOL_GMX.top created by acpype (Rev: 0) on Wed Aug 14 12:56:09 2019
+
+#include "amber99sb-ildn.ff/forcefield.itp"
+#include "peptide.itp"
+#include "amber99sb-ildn.ff/tip3p.itp"
+
+[ system ]
+peptide in water
+
+[ molecules ]
+; Compound        nmols
+ MOLNAME          N_MOL     
