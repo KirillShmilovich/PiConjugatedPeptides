@@ -4,7 +4,7 @@
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=kirills@uchicago.edu
 
-#SBATCH --job-name=DFAG_N_MOLS_DIMS
+#SBATCH --job-name=N_MOLS_DIMS
 
 #SBATCH --output=out.out
 #SBATCH --partition=gm4-pmext
@@ -28,7 +28,5 @@ module load cuda/10.0
 module load openmpi/2.0.2
 source /project2/andrewferguson/Kirill/plumed_mods/plumed-2.5.2/sourceme.sh
 source /project2/andrewferguson/Kirill/gromacs_2019.2/bin/GMXRC
-module load Anaconda3/2019.03
-source activate kirills
 
 bash sim.sh N_MOLS DIMS
